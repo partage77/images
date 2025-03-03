@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Scores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .bar-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            position:absolute;
+            top:30px;
+        }
+
+        .player-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            height: 40px;
+            transition: transform 2s ease;
+            position : absolute
+        }
+
+        .player-name {
+            flex: 1;
+            text-align: left;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .player-bar {
+            height: 100%;
+            background-color: #007bff;
+            border-radius: 7px;
+            transition: width 2s ease;
+            color: white;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            text-shadow: 4px 3px 6px black;
+            font-size: 27px;
+            padding-left : 10px;
+            box-shadow : 6px 7px 10px 0px black;
+        }
+
+        .player-score {
+            margin-left: 10px;
+            width: 40px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar-container" id="barContainer"></div>
+    <script src="chatgpt.js"></script>
+</body>
+</html>
